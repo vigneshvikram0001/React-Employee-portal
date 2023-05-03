@@ -1,0 +1,133 @@
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --rose: rgb(0, 101, 172);
+  --main-menu: #e6e6e6;
+  --light: #fff;
+}
+.main-menu{
+  min-height: 100vh;
+  background: url("./images/geometric.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 2rem;
+  padding-top: 5.5rem;
+  margin-left: 15rem;
+}
+body{
+  font-family: sans-serif;
+}
+.dash-list-head{
+  font-weight: bold;
+  margin: 0;
+  margin-top: 5px;
+  color: #fff;
+}
+.dash-list-name{
+  color: #fff;
+  transition: all .10s ease;
+}
+.dash-list{
+  background:rgba( 255, 255, 255, 0.15 );
+  box-shadow:0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter:blur( 8px );
+  -webkit-backdrop-filter:blur( 8px );
+  border-radius:10px;
+  border:1px solid rgba( 255, 255, 255, 0.18 );
+
+  box-shadow: 0 0 ;
+  backdrop-filter: blur(10px);
+  transition: all .35s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px #000000;
+}
+.dash-list:hover{
+  background-color: var(--rose);
+  color: var(--light);
+  text-decoration: none;
+}
+.dash-list:hover .dash-list-icon, 
+.dash-list:hover .dash-list-head, 
+.dash-list:hover .dash-list-name{
+  color: var(--light);
+}
+#task-btn{
+  background-color: var(--rose);
+}
+.dash-list-icon{
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--rose);
+  transition: all .35s ease;
+}
+.pro-head{
+  padding:1rem 10px 1rem ;
+}
+.pro-head-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+.pro-head button{
+  padding: 5px 10px;
+  background-color: var(--rose);
+  color: var(--light);
+  border-radius: 20px;
+}
+.pro-head button:hover{
+  color: var(--rose);
+  background-color: var(--light);
+  border-color: grey;
+}
+hr{
+  margin: 0 10px 10px;
+}
+.list-group{
+  border:none;
+}
+.create-task-btn{
+  background-color: var(--rose);
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: var(--light);
+  border: 3px solid #fff;
+  box-shadow: 0 0 7px 3px var(--rose);
+}
+.create-task-btn:focus{
+  outline: none;  
+}
+.pro-details .table{
+  text-align: center;
+}
+#sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.overall{
+  overflow-y: scroll;
+  max-height: 630px;
+  min-height: 630px;
+}
+.head-title{
+  color: var(--rose);
+}
+/* .absolute::-webkit-scrollbar-thumb{
+  background: var(--rose);
+}
+.absolute::-webkit-scrollbar-track{
+  background-color: var(--rose);
+} */
+.loader-back{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+}
+.loaders{
+  position: relative;
+}
+.badge{
+  background-color: var(--rose);
+}
